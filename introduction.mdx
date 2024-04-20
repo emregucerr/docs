@@ -40,7 +40,48 @@ In order to connect your codebases, you will need go through necessary setup ste
 </Card>
 
 ## Signing In Your Account for the First Time
+When you first sing in your accountm, you will be prompted to visit the documentation to learn how to set up your git provider with Fume. If you have already completed this step, you can dismiss the popup bu clicking anywhere else on the screen.
 
+<img src="images/first_time.png" />
+
+You will be prompted with an empty chat history and unable to start any tasks. The reason for this is that you did not add any repositories to Fume yet! Next section will guide you through the process of adding your first repository.
+
+## Adding Your First Repository
+
+To add you first repository, click on the 'Add Repo' button in the Home page - marked with red in the image below.
+
+<img src="images/add_repo_btn.png" />
+
+You will be prompted with a form to enter the relevant information for your repository. You will need to provide the following information:
+
+- Git Provider (Github or Gitlab)
+- Org Name
+- Repo Name
+- Development Branch Name
+
+<img src="images/add_repo_form.png" />
+
+Once you have filled in the form, click on the 'Submit' button to add your repository to Fume.
+
+If you are using Github, you will be prompted to enter a personal access token. This token will allow Fume to verify that you really have access to the repository you want to add. You can create a personal access token in your Github settings. The popup screen will include the relevant link and the necessary permission names to do that. When you create one, simply copy and paste the token to the relevant field.
+
+On the other hand, if you are using Gitlab, you will be prompted to enter your Gitlab token and Gitlab URL. This is the token you generated previously in the section <a href="/gitlab">Gitlab Integration</a>. Copy and paste the token you saved from the previous section to the relevant field.
+
+_Team's Note: Some users are reporting a bug where they have to re-enter their repo information after entering the Github access token. If you exeperinece the same issue, we apologize for the inconvinience. Kindly, re-enter the info and all should be good._
+
+After adding a repository, it might take a few seconds for Fume to verify all of the information you just entered. Wait until the spinner disappears and you get redirected to the 'Settings' page.
+
+In the 'Settings' page, you will be able to see the name of the repository you just added. The status for the newly added repository should be 'PROGRESS'. This means that Fume has started processing your codebase.
+
+<img src="images/settings_page.png" />
+
+This processing can take a while. Anywhere between 10 minutes to a few hours depending on the size of your codebase. If, anything goes wrong, the status will change to 'FAILIURE'. In that case, please contact us at contact@fumedev.com. Also, Fume's processing should not take more than 6 hours (if you are not uploading the Linux kernel). If it takes longer than that, please contact us from the same email.
+
+When the status of your repository changes to 'SUCCESS', you can now start using Fume! Go back to your 'Home' page and start your first task and select the repository you just added.
+
+## Slack Integration for Your Team (Optional)
+
+If you are using Slack for your team communication, you can connect Fume to your Slack workspace! Everday engineers ask each other many technical questions and they lose time for both answering and searching for the answer. Fume can act as the experienced engineer who understands ever part of your codebase(s). To connect Fume to your Slack workspace and save valuable hours for your team, see the guide below.
 
 <Card
     title="Slack Integration"

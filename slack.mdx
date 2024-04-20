@@ -31,37 +31,12 @@ As you naviage to the `Messages` tab, you will be able to type messages and slas
 
 Note that the curly brackets are only for placeholders. Your command call must be your email and password with a single space in between.
 
-If the login attempt is successful, you will be prompted with a modal to configure your git repository for your Slack Bot. See the previous sections to learn how to setup Fume for Github and Gitlab.
+If the login attempt is successful, you will be prompted with a success message like the one below.
 
-<img src="images/slack3.png"/>
+<img src="images/slack_login.png"/>
 
-#### Git Provider
+After you have completed all of these steps succesfully, you should be done with setting Fume for your Slack workspace! Go to one of you *PUBLIC CHANNELS* and ask a question with Fume tagged in the end. Everything after that is the same flow that you know and love with the web app. 
 
-Fume currently supports Github and Gitlab. Select the one you use. Integration with BitBucket is coming soon.
-
-#### Org Name/Repo Name
-
-This is the joint name for your repository. It's usuallt the combination between your organization name and the repository name with a slash in between.
-
-#### Development Branch Name
-This is the name of the branch you use for actıve development. The target branch for Fume's PRs wıll be determined by what you put in here.
-
-### Extra Configuration (GitLab Only)
-
-If you are using GitLab, you will be prompted with and extra set of config questions. 
-
-<img src="images/slack4.png"/>
-
-#### Gitlab Domain
-
-Some GitLab users host their repos in a custom domain. If that is the case for you, put down that custom domain here: i.e. gitlab.fumedev.com. 
-
-Otherwise, just put gitlab.com
-
-#### Fume Bot Token
-
-This is the bot token you previously created from your Gitlab repository. Make sure to double check the toke has the right role and permissions.
-
-After you have completed all of these steps succesfully, you should be done with setting Fume for your Slack workspace!
+Note that Fume, for now, only supports Slack public channels. If you want to use Fume in a private channel or a DM, you will have to contact us at contact@fumedev.com.
 
 
